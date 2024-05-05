@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Source
         uses: actions/checkout@v3
       - name: Login to Docker Hub
-        run: docker login -u 7842844601 -p Hello$143
+        run: docker login -u 7842844601 -p dckr_pat_Yio0D4dz1LnTzp7lvNfFZ4MG_jg
       - name: Build Docker Image
         run: docker build -t 7842844601/cicd-pipeline .
       - name: Publish image to docker hub
